@@ -10,7 +10,7 @@ const LaunchDetailsContainer = ({id}: OwnProps) => {
     const { data, loading, error, refetch } = useLaunchesQuery({variables: {id: String(id)}});
     useEffect(() => {
         refetch();
-    }, [id])
+    }, [id]) // eslint-disable-line react-hooks/exhaustive-deps
     if(loading) return <div>Data is loading</div>
 
     if(error) return <div>Error</div>
