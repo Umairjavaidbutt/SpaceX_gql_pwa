@@ -39,5 +39,5 @@ jobs:
       run: npm install --global surge
 
     - name: Deploy to Surge
-      run: surge ./build spaceX_gql_pwa_bootcamp_2020.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build spaceX_gql_pwa_bootcamp.surge.sh --token ${{ secrets.SURGE_TOKEN }}
 
